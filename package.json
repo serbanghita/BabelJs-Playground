@@ -1,0 +1,31 @@
+{
+  "name": "babeljs-playground",
+  "version": "1.0.0",
+  "description": "BabelJS Playground and code examples",
+  "main": "index.js",
+  "scripts": {
+    "build": "$(npm bin)/babel src -d lib",
+    "transform": "$(npm bin)/babel src -d lib && node lib/transform.js",
+    "serve": "$(npm bin)/browser-sync start --s . --f . --port 3000 --reload-debounce 1500 --no-ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serbanghita/BabelJs-Playground.git"
+  },
+  "keywords": [
+    "babeljs"
+  ],
+  "author": "Serban Ghita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serbanghita/BabelJs-Playground/issues"
+  },
+  "homepage": "https://github.com/serbanghita/BabelJs-Playground#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12"
+  }
+}
